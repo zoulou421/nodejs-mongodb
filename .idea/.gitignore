@@ -8,4 +8,4 @@
 /dataSources.local.xml
 
 #added: ignored directory
-/node_modules
+/node_modules/*
