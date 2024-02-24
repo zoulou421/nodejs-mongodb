@@ -1,13 +1,15 @@
+require('./models/db');
+
 const express=require('express');
 const path=require('path');
 const handlebars=require('handlebars');
 const exphbs=require('express-handlebars');
 const {allowInsecureProtypeAccess, allowInsecurePrototypeAccess}=require('@handlebars/allow-prototype-access');
 const bodyparser=require('body-parser');
-
-
 //app
 var app= express();
+
+const studentController=require("./controllers/studentController");
 
 
 app.use(bodyparser.urlencoded({extended:false}));

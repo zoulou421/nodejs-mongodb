@@ -78,3 +78,5 @@ router.get('/delete/:id',(req, res)=>{
         }
     });
 });
+
+module.exports=router
